@@ -1,5 +1,5 @@
 # GDAX-Express
-[ React, Webpack, Node, Express] 
+[ React, Node, Express] 
 
 GDAX down again?
 
