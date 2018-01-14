@@ -5,9 +5,18 @@ const Header = (props) => {
   return <div className="header">
     <div className="ticker-header">
       <h5 style={{ display: 'inline', color: '#fff' }}>
-        <img src="../images/trend.svg" /> &nbsp;
-          BTC: {Number(props.bitcoin).toFixed(2)} &nbsp; LTC: {Number(props.litecoin).toFixed(2)} &nbsp; ETH: {Number(props.ethereum).toFixed(2)}
+        <img src="../images/trend.svg" /> &nbsp; BTC: {Number(props.bitcoin).toFixed(2)} &nbsp; LTC: {Number(props.litecoin).toFixed(2)} &nbsp; ETH: {Number(props.ethereum).toFixed(2)}
       </h5>
+      <span
+        style={{
+          position: 'absolute',
+          right: '0',
+          top: '30px',
+          color: '#9aff9a'
+        }}
+      >
+          GDAX Connected
+      </span>
     </div>
     <div className="balance-header" style={{ backgroundColor: '#444' }}>
       <img src="../images/dollar.svg" /> &nbsp;

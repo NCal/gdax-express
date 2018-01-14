@@ -11,14 +11,12 @@ const requestPath = '/accounts'
 
 const what = timestamp + method + requestPath
 
-const key = hush.key // change to your own key
-const secret = hush.secret // change to your own secret
-const passphrase = hush.passphrase // change to your own passphrase
+/*** REPLACE VALUES BELOW ***/
+const key = hush.key // change to your own api key
+const secret = hush.secret // change to your own api secret
+const passphrase = hush.passphrase // change to your own api passphrase
 const hashedSecret = Buffer(hush.secret, 'base64')
 
-// let hmac = Crypto.createHmac('sha256', hashedSecret)
-// let test = hmac.update(what).digest('base64')
-let data
 let connected
 
 const publicClient = new Gdax.PublicClient()

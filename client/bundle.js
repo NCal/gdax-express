@@ -5994,6 +5994,18 @@ var Header = function Header(props) {
         Number(props.litecoin).toFixed(2),
         ' \xA0 ETH: ',
         Number(props.ethereum).toFixed(2)
+      ),
+      _react2.default.createElement(
+        'span',
+        {
+          style: {
+            position: 'absolute',
+            right: '0',
+            top: '30px',
+            color: '#9aff9a'
+          }
+        },
+        'GDAX Connected'
       )
     ),
     _react2.default.createElement(
