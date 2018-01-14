@@ -6,6 +6,7 @@ GDAX down again?
 Use this simple interface to place limit orders using the GDAX api (which more than often stays up when GDAX goes down)
 
 Instructions: 
+
 0. go to https://www.gdax.com/settings/api and create your GDAX api key, secret and passphrase
 1. git clone this repo
 2. yarn install
