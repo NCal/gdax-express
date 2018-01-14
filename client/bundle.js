@@ -4031,7 +4031,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-console.log('websocket data', _socketData2.default);
+// console.log('websocket data', data)
 
 var Home = function (_React$Component) {
   _inherits(Home, _React$Component);
@@ -4077,22 +4077,12 @@ var Home = function (_React$Component) {
       });
     };
 
-    _this.getTickers = function () {
-      console.log('get tickers');
-      _axios2.default.get('/api/tickers').then(function (res, error) {
-        console.log('tickers', res);
-        // this.setState({ balances: res.data.account })
-      });
-    };
-
     _this.getBalance = function () {
       var self = _this;
       console.log('get balance');
       _axios2.default.get('/api').then(function (res, error) {
         console.log('balances', res.data.account);
-        _this.setState({ balances: res.data.account }, function () {
-          self.getTickers();
-        });
+        _this.setState({ balances: res.data.account }, function () {});
       });
     };
 

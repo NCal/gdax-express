@@ -6,7 +6,7 @@ import Form from './Form'
 import Header from './Header'
 import data from '../../Data/socketData'
 import Orders from './Orders'
-console.log('websocket data', data)
+// console.log('websocket data', data)
 
 export default class Home extends React.Component {
   constructor (props, context) {
@@ -62,21 +62,13 @@ export default class Home extends React.Component {
     });
   }
 
-  getTickers = () => {
-    console.log('get tickers');
-    axios.get('/api/tickers').then((res, error) => {
-      console.log('tickers', res)
-      // this.setState({ balances: res.data.account })
-    })
-  }
-
   getBalance = () => {
     let self = this;
     console.log('get balance')
     axios.get('/api').then((res, error)=>{
       console.log('balances', res.data.account)
       this.setState({balances: res.data.account}, () => {
-        self.getTickers()
+
       })
     })
   }
