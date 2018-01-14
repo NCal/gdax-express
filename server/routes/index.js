@@ -11,9 +11,9 @@ const requestPath = '/accounts'
 const what = timestamp + method + requestPath
 
 /*** REPLACE VALUES BELOW ***/
-const key = hush.key // <--change to your own api key
-const secret = hush.secret // <--change to your own api secret
-const passphrase = hush.passphrase // <--  change to your own passphrase
+const key = hush.key // <--change to your own GDAX api key
+const secret = hush.secret // <--change to your own GDAX api secret
+const passphrase = hush.passphrase // <--  change to your own GDAX passphrase
 const hashedSecret = Buffer(secret, 'base64')
 
 let connected
