@@ -11,3 +11,5 @@ Instructions:
 3. edit server/index.js by inserting your personal api key, api secret, and api passphrase
 4. yarn start
 5. Profit?
+
+![Dev-Dash](https://raw.githubusercontent.com/NCal/gdax-express/master/client/images/gdax.png?token=ANetLyEcnu6vkj1XKX1nejYJdIKm8Svdks5aZQWSwA%3D%3D)
