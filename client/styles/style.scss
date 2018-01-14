@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Catamaran');
+@import '../../node_modules/foundation-sites/scss/foundation';
+
+@include foundation-flex-grid;
+@include foundation-flex-classes;
+@include foundation-everything;
+
+// GLOBAL
+html,
+body {
+  color: #000;
+  font-family: 'Catamaran', sans-serif;
+  font-weight: normal;
+}
+
+a {
+  color: peachpuff;
+  text-decoration: none;
+}
+// BODY CONTAINER
+.body_container {
+  position: absolute;
+  width: 100%;
+  padding: 20px;
+  background-color: navajowhite;
+  height: 100vh;
+
+  .order-message {
+    color: red;
+    text-align: center;
+  }
+}
+
+// HEADER
+.header {
+  height: 80px;
+  width: 100%;
+  position: absolute;
+  background-color: #272727;
+  top: 0;
+  left: 0;
+}
+
+.header {
+  .ticker-header {
+    height: 50px;
+
+    h5 {
+      line-height: 2.5;
+    }
+  }
+  .balace-header {
+    height: 30px;
+  }
+
+  .balance {
+    display: inline-block;
+    margin-right: 20px;
+    color: #fff;
+  }
+}
+
+.order-form {
+  max-width: 400px;
+  color: #fff !important;
+  margin-bottom: 50px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.orders {
+  position: relative;
+  margin: 0 auto;
+  max-width: 700px;
+
+  ul {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 152px;
+    background-color: #eee;
+    border: 1px solid #aaa;
+    overflow: scroll;
+    list-style-type: none;
+    margin: 0;
+
+    li {
+      background-color: #ddd;
+      width: 100%;
+      border-bottom: 1px solid #aaa;
+      padding: 0 10px 0 10px;
+      span {
+        margin-right: 30px;
+        text-align: center;
+      }
+      .cancel-button {
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}
