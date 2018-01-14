@@ -1,7 +1,7 @@
 const express = require('express')
 const router = express.Router()
 const Gdax = require('gdax')
-const hush = require('../../private/hush')
+const hush = require('../../private/hush') // <-- Delete this line
 
 const apiURI = 'https://api.gdax.com'
 let timestamp = Date.now()
@@ -11,10 +11,10 @@ const requestPath = '/accounts'
 const what = timestamp + method + requestPath
 
 /*** REPLACE VALUES BELOW ***/
-const key = hush.key // change to your own api key
-const secret = hush.secret // change to your own api secret
-const passphrase = hush.passphrase // change to your own passphrase
-const hashedSecret = Buffer(hush.secret, 'base64')
+const key = hush.key // <--change to your own api key
+const secret = hush.secret // <--change to your own api secret
+const passphrase = hush.passphrase // <--  change to your own passphrase
+const hashedSecret = Buffer(secret, 'base64')
 
 let connected
 
