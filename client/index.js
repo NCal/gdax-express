@@ -8,17 +8,14 @@ import Home from './components/Home'
 
 const App = () => {
   return <div>
-      <div className="container">
-        <BrowserRouter>
-          <Layout>
-            {/* <Switch> */}
-            <Route path="/" exact render={({ props, history }) => <Home {...props} history={history} />} />
-            {/*  <Route path="/contract" render={props => <Contract {...props} />} /> */}
-            {/* </Switch> */}
-          </Layout>
-        </BrowserRouter>
-      </div>
+    <div className="container">
+      <BrowserRouter>
+        <Layout>
+          <Route path="/" exact render={({ props, history }) => <Home {...props} history={history} />} />
+        </Layout>
+      </BrowserRouter>
     </div>
+  </div>
 }
 
 ReactDOM.render(
