@@ -6,8 +6,6 @@ import './styles/style.scss'
 import Layout from './components/layout'
 import Home from './components/Home'
 
-import { Web3Provider } from 'react-web3'
-
 const App = () => {
   return <div>
       <div className="container">
