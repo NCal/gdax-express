@@ -3,7 +3,7 @@
 
 GDAX down again?
 
-Use this simple interface to place limit orders using the GDAX api (which more than often stays up when GDAX goes down)
+Use this simple interface to place market/limit orders using the GDAX api (which more than often stays up when GDAX goes down)
 
 Instructions: 
 
