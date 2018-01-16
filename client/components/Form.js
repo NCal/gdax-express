@@ -14,12 +14,13 @@ const Form = (props) => {
     </select>
     <select onChange={props.selectOrderType}>
       <option name="limit">limit</option>
-      {/* <option name="market">market</option>
-      <option name="stop">stop</option> */}
+      <option name="market">market</option>
+      {/* <option name="stop">stop</option> */}
     </select>
-    <input type="text" name="size" placeholder="size" value={props.size} onChange={props.setSize}/>
-    <input type="text" name="price" placeholder="price" value={props.price} onChange={props.setPrice}/>
-    <input type="submit" value="place order" onClick={props.placeOrder}/>
+    <input type="text" name="size" placeholder="size" value={props.size} onChange={props.setSize} />
+    {props.orderType === 'limit' ? <input type="text" name="price" placeholder="price" value={props.price} onChange={props.setPrice} />
+      : <span></span>}
+    <input type="submit" value="place order" onClick={props.placeOrder} />
   </div>
 }
 

@@ -163,7 +163,7 @@ export default class Home extends React.Component {
   render () {
     return this.state.balances ? <div>
       <Header balances={this.state.balances} bitcoin={this.state.bitcoin} litecoin={this.state.litecoin} ethereum={this.state.ethereum} />
-      <Form size={this.state.size} price={this.state.price} placeOrder={this.placeOrder} selectOrderType={this.selectOrderType} selectCoin={this.selectCoin} setSize={this.setSize} setPrice={this.setPrice} selectOrder={this.selectOrder} placeOrder={this.placeOrder} />
+      <Form size={this.state.size} price={this.state.price} placeOrder={this.placeOrder} selectOrderType={this.selectOrderType} orderType={this.state.orderType} selectCoin={this.selectCoin} setSize={this.setSize} setPrice={this.setPrice} selectOrder={this.selectOrder} placeOrder={this.placeOrder} />
       <p className='order-message'>{this.state.orderMessage}</p>
       {this.state.orders ? <Orders cancelOrder={this.cancelOrder} orders={this.state.orders} /> : <div />}
       </div> : <div>loading</div>

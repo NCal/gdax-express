@@ -3859,7 +3859,7 @@ var Home = function (_React$Component) {
         'div',
         null,
         _react2.default.createElement(_Header2.default, { balances: this.state.balances, bitcoin: this.state.bitcoin, litecoin: this.state.litecoin, ethereum: this.state.ethereum }),
-        _react2.default.createElement(_Form2.default, _defineProperty({ size: this.state.size, price: this.state.price, placeOrder: this.placeOrder, selectOrderType: this.selectOrderType, selectCoin: this.selectCoin, setSize: this.setSize, setPrice: this.setPrice, selectOrder: this.selectOrder }, 'placeOrder', this.placeOrder)),
+        _react2.default.createElement(_Form2.default, _defineProperty({ size: this.state.size, price: this.state.price, placeOrder: this.placeOrder, selectOrderType: this.selectOrderType, orderType: this.state.orderType, selectCoin: this.selectCoin, setSize: this.setSize, setPrice: this.setPrice, selectOrder: this.selectOrder }, 'placeOrder', this.placeOrder)),
         _react2.default.createElement(
           'p',
           { className: 'order-message' },
@@ -5058,10 +5058,15 @@ var Form = function Form(props) {
         'option',
         { name: 'limit' },
         'limit'
+      ),
+      _react2.default.createElement(
+        'option',
+        { name: 'market' },
+        'market'
       )
     ),
     _react2.default.createElement('input', { type: 'text', name: 'size', placeholder: 'size', value: props.size, onChange: props.setSize }),
-    _react2.default.createElement('input', { type: 'text', name: 'price', placeholder: 'price', value: props.price, onChange: props.setPrice }),
+    props.orderType === 'limit' ? _react2.default.createElement('input', { type: 'text', name: 'price', placeholder: 'price', value: props.price, onChange: props.setPrice }) : _react2.default.createElement('span', null),
     _react2.default.createElement('input', { type: 'submit', value: 'place order', onClick: props.placeOrder })
   );
 };
