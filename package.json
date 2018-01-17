@@ -14,16 +14,16 @@
   "license": "MIT",
   "dependencies": {
     "babel-preset-react": "^6.24.1",
-    "bcrypt": "^1.0.3",
+
     "bluebird": "^3.5.0",
     "body-parser": "^1.17.2",
-    "crypto": "^1.0.1",
+
     "css-loader": "^0.28.5",
     "express": "^4.15.2",
     "foundation-sites": "^6.4.3",
-    "fs": "^0.0.1-security",
+
     "gdax": "^0.4.2",
-    "jquery": "^3.2.1",
+
     "morgan": "^1.8.2",
     "net": "^1.0.2",
     "node-sass": "^4.5.3",
