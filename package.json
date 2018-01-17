@@ -14,16 +14,12 @@
   "license": "MIT",
   "dependencies": {
     "babel-preset-react": "^6.24.1",
-
     "bluebird": "^3.5.0",
     "body-parser": "^1.17.2",
-
     "css-loader": "^0.28.5",
     "express": "^4.15.2",
     "foundation-sites": "^6.4.3",
-
     "gdax": "^0.4.2",
-
     "morgan": "^1.8.2",
     "net": "^1.0.2",
     "node-sass": "^4.5.3",
